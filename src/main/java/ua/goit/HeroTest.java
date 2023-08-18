@@ -5,14 +5,14 @@ class Hero {
     private int hp;
 
     public Hero() {
-        name = "Paratrooper";
-        hp = 100;
+        this("Paratrooper", 100);
     }
 
     public Hero(String name, int hp) {
         this.name = name;
         this.hp = hp;
     }
+
 
 
     public String getName() {
@@ -34,6 +34,7 @@ class HeroTest {
         //Expect 100
         System.out.println(hero.getHp());*/
 
+//      Task 2-3
         Hero hero = new Hero("Stranger", 50);
 
         //Expect Stranger
@@ -41,6 +42,8 @@ class HeroTest {
 
         //Expect 50
         System.out.println(hero.getHp());
+
+
     }
 }
 
