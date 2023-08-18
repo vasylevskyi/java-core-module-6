@@ -10,10 +10,14 @@ class Hero {
 
     public Hero(String name, int hp) {
         this.name = name;
-        this.hp = hp;
+        if (hp >= 0 && hp <= 200) {
+            this.hp = hp;
+        } else if (hp > 200) {
+            this.hp = 200;
+        } else {
+            this.hp = 0;
+        }
     }
-
-
 
     public String getName() {
         return name;
@@ -35,7 +39,7 @@ class HeroTest {
         System.out.println(hero.getHp());*/
 
 //      Task 2-3
-        Hero hero = new Hero("Stranger", 50);
+        Hero hero = new Hero("Stranger", 250);
 
         //Expect Stranger
         System.out.println(hero.getName());
