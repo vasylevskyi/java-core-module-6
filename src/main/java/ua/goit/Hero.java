@@ -1,5 +1,9 @@
 package ua.goit;
 
+/**
+ * Task 1-4
+ */
+
 class Hero {
     private String name;
     private int hp;

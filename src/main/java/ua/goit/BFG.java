@@ -1,5 +1,8 @@
 package ua.goit;
 
+/**
+ * Task 5
+ */
 public class BFG {
     private int ammo;
     private int damage;

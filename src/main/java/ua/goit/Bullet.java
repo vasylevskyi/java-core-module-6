@@ -1,5 +1,8 @@
 package ua.goit;
 
+/**
+ * Task 6
+ */
 public class Bullet {
     {
         System.out.println("Bullet created!");
