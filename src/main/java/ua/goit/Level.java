@@ -3,7 +3,7 @@ package ua.goit;
 import java.util.Arrays;
 
 /**
- * Task 16-18
+ * Task 16-19
  */
 
 public class Level {
