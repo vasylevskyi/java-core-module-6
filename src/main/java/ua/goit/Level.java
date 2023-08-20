@@ -18,6 +18,17 @@ public class Level {
     public String toString() {
         return "Quarke level, name is " + levelInfo.name + ", difficulty is " + levelInfo.difficulty + ", point count is " + points.length;
     }
+
+    public int calculateLevelHash() {
+        int calculateLevelHash = 0;
+        int multiplyPoint;
+
+        for (int i = 0; i < points.length; i++) {
+            multiplyPoint = points[i].getX() * points[i].getY();
+            calculateLevelHash += multiplyPoint;
+        }
+        return calculateLevelHash;
+    }
     public static class Point {
         private int x;
         private int y;
@@ -77,6 +88,9 @@ class LevelTest {
 
         //Quarke level, name is Quarke Intro, difficulty is Easy, point count is 3
         System.out.println(new Level(info, points));
+
+        //3015
+        System.out.println(new Level(info, points).calculateLevelHash());
 
     }
 }
